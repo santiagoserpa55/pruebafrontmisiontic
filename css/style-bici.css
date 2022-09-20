@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+header .logo {
+    width: 20%;
+    height: 100%;
+}
+
+header .logo a img {
+    margin-top: 3px;
+    width: 120px;
+    transition: 0.9s all;
+}
+
+header .logo a img:hover {
+    margin-top: -2px;
+    transition: 0.9s;
+    width: 130px;
+}
+
+header .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    transition: 0.7s;
+}
+
+header .logo a:hover {
+    transition: 0.9s;
+    font-size: 1px;
+}
+
+.caja-menu {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.caja-menu .menu {
+    padding-top: 18px;
+    width: 100%;
+    height: 70px;
+}
+
+.caja-menu .menu ul {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-menu .menu ul li {
+    margin: 0px 50px;
+}
+
+.caja-menu .menu ul li a {
+    font-size: 15px;
+    color: white;
+    padding: 0px 0px;
+    font-family: 'Rowdies';
+    transition: .4s;
+}
+
+.caja-menu .menu ul li a:hover {
+    font-size: 17px;
+    color: white;
+    transition: 0.8s;
+    padding-bottom: 5px;
+    border-bottom: .5px solid white;
+}
+
+.section1 {
+    background-color: aquamarine;
+    height: 700px;
+
+}
+
+.fondo1 {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

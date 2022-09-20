@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+
+    <link rel="stylesheet" href="css/form-registro.css">
+    <script defer src="js/registro.js"></script>
+</head>
+
+<body>
+    <div class="cajaprincipal" id="info">
+        <header>
+            <h1>Registro</h1>
+        </header>
+        <div id="formData">
+        <form name="registro" class="contact" method="post">
+
+            <label for="id">Identificaciòn </label>
+            <input type="number" name="id" required>
+
+            <label for="primernombre">Primer nombre </label>
+            <input type="text" name="primernombre" id="primernombre" required>
+
+            <label for="segundonombre">Segundo nombre</label>
+            <input type="text" name="segundonombre" id="segundonombre" required>
+
+            <label for="primerapellido">Primer apellido</label>
+            <input type="text" name="primerapellido" id="primerapellido" required>
+
+            <label for="segundoapellido">Segundo apellido</label>
+            <input type="text" name="segundoapellido" id="segundoapellido" required>
+            
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" required>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+
+
+            <label for="departamento">Departamento</label>
+            <input type="text" name="departamento" id="" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad" required>
+
+            <label for="barrio">Barrio</label>
+            <input type="text" name="barrio" id="barrio" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" required>
+
+            <input class="checkbox" type="checkbox" name="parrafo" required>
+            <h4>Acepto política de tratamiento de datos. Si cambias de opinión, puedes darte de baja de estos e-mails en
+                cualquier momento utilizando el botón de Darme de Baja en los e-mails que recibes. Para más
+                información sobre cómo utilizamos tus datos personales, y tus derechos de privacidad, por favor lee
+                nuestra Política de Privacidad</h4>
+
+            <input type="submit" value="Finalizar registro">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
