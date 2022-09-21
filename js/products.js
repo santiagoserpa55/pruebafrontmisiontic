@@ -34,7 +34,7 @@ const bikes = data => {
                 </p>
                 <p>
                     <b>Descripcion</b>
-                    ${item.description}
+                    ${item.preciounitario }
                 </p>
                 <p>
                 <a href="pais.html?name=${item.name}">Mas info</a>

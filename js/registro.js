@@ -58,22 +58,6 @@ function collectData(evt) {
         alert('Contraseña no es válida. Debe tener al menos 5 caracteres.');
         return;
     }
-/* 
-    const customer = {
-        customer_id: id,
-        first_name: firstName,
-        middle_name: middleName,
-        first_surname: firstSurname,
-        second_surname: secondSurname,
-        phone: phone,
-        email: email,
-        departament: departament,
-        city: city,
-        neighborhood: neighborhood,
-        address: address,
-        password: password
-    } */
-
     const customer = {
         documento: id,
         primernombre: firstName,
@@ -86,9 +70,9 @@ function collectData(evt) {
         ciudad: city,
         barrio: neighborhood,
         direccion: address,
-        contraseña: password
+        contrasena: password
     }
-    //console.log(customer);
+    console.log(customer);
     const dataToSend = JSON.stringify(customer);
     saveCustomer(dataToSend);
 }
@@ -103,14 +87,14 @@ function saveCustomer(data) {
         body: data
     })
         .then(response => {
-            //console.log(response);
+            console.log(response);
             if (response.ok)
                 return response.text()
             else
                 throw new Error(response.text());
         })
         .then(data => {
-            //console.log(data);
+            console.log(data);
             handleSuccess();
         })
         .catch(error => {
