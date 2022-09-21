@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", e => {
 })
 const fetchData = async () => {
     try {
-        const res = await fetch('http://bicimarketunal.herokuapp.com/biciapp/getAllBikes');
+        const res = await fetch('https://bicimarketunal.herokuapp.com/biciapp/getAllBikes');
         //const res = await fetch('all.json')
         const data = await res.json();
         console.log(data)
