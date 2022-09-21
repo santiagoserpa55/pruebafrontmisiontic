@@ -105,10 +105,13 @@ function saveCustomer(data) {
 
 function handleSuccess() {
     document.getElementById("formData").remove();
-    const message = document.createElement("p");
-    message.innerText = "Cliente creado exitosamente.";
+    alert("Registro exitoso");
     const info = document.getElementById("info");
-    info.appendChild(message);
+    const btnBack = document.createElement("button");
+    btnBack.innerText = "Regresar";
+    info.appendChild(btnBack);
+    
+   
 }
 
 function handleError(msg) {

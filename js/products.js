@@ -25,21 +25,23 @@ const bikes = data => {
             <div class="card-content">
                 <h3>${item.nombre}</h3>
                 <p>
-                    <b>Categoria</b>
+                    <b></b>
                     ${item.categoria}
                 </p>
                 <p>
-                    <b>Desc</b>
+                    <b></b>
                    ${item.descripcion}
                 </p>
-                <p>
-                    <b>Descripcion</b>
-                    ${item.preciounitario }
+                <p class="price">
+                    <b>$
+                    ${item.preciounitario}
+                    </b>
                 </p>
                 <p>
-                <a href="pais.html?name=${item.name}">Mas info</a>
+                <a href="pais.html?name=${item.e}">Mas info</a>
                 </p>
-                <button>Add</button>
+                <br/>
+                <button class="btnAdd">Add</button>
             </div>
         </article> `
     });

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
 
 body {
@@ -11,95 +12,125 @@ body {
     height: 1000px;
 }
 
+.titulo {
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 35px;
+    padding-top: 10px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 1s all;
+    letter-spacing: 2.4px;
+}
+
+.titulo:hover {
+    font-size: 13px;
+    transition: .9s all;
+}
+
+.logo-pagina img {
+    width: 130px;
+    height: 90px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
 header {
-    position: fixed;
-    top: 0;
+    display: flex;
     background-color: black;
     height: 100px;
     width: 100%;
-    display: flex;
+
 }
 
-header .logo {
-    width: 20%;
-    height: 100%;
+.box-menu {
+    width: 800px;
+    height: 100px;
+    position: relative;
 }
 
-header .logo a img {
-    margin-top: 3px;
-    width: 120px;
-    transition: 0.9s all;
-}
-
-header .logo a img:hover {
-    margin-top: -2px;
-    transition: 0.9s;
-    width: 130px;
-}
-
-header .logo a {
+.menu-principal ul {
+    margin-left: -80px;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
-    transition: 0.7s;
 }
 
-header .logo a:hover {
-    transition: 0.9s;
-    font-size: 1px;
+.menu-principal ul li {
+    margin: 0px 16px;
 }
 
-.caja-menu {
-    width: 100%;
-    height: 100%;
+.menu-principal ul li a {
+    color: white;
+    transition: .3s all;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.menu-principal ul li a:hover {
+    font-size: 18px;
+    transition: .3s all;
+    border-bottom: 1px solid white;
+}
+
+.menu-sesion-registro {
+    width: 389px;
+    height: 100px;
+}
+
+.menu-sesion-registro button {
+    width: 156px;
+    height: 35px;
+    display: block;
+    margin-left: 190px;
+    border-radius: 20px;
+    letter-spacing: 2.5px;
+    border-style: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .7s all;
+}
+
+.menu-sesion-registro button:hover{
+    transition: .5s all;
+    width: 158px;
+    height: 37px;
+    font-size: 16.4px;
+    background-color: white;
+    color: black;
+}
+
+.btn-inicio-sesion {
+    background-color: rgb(48, 202, 48);
+    color: white;
+    margin-top: 13px;
+}
+
+.btn-inicio-sesion:hover {
     background-color: black;
 }
 
-.caja-menu .menu {
-    padding-top: 18px;
-    width: 100%;
-    height: 70px;
-}
-
-.caja-menu .menu ul {
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja-menu .menu ul li {
-    margin: 0px 50px;
-}
-
-.caja-menu .menu ul li a {
-    font-size: 15px;
+.btn-registro {
+    background-color: rgb(25, 36, 185);
+    margin-top: 6px;
     color: white;
-    padding: 0px 0px;
-    font-family: 'Rowdies';
-    transition: .4s;
 }
 
-.caja-menu .menu ul li a:hover {
-    font-size: 17px;
-    color: white;
-    transition: 0.8s;
-    padding-bottom: 5px;
-    border-bottom: .5px solid white;
+.btn-registro:hover {
+    background-color: black;
 }
-
-.section1 {
+.section1{
     background-color: aquamarine;
     height: 700px;
-
+    
 }
 
-.fondo1 {
-    padding-top: 100px;
+.fondo1{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
