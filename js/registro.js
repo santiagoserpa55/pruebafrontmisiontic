@@ -108,6 +108,7 @@ function handleSuccess() {
     alert("Registro exitoso");
     const info = document.getElementById("info");
     const btnBack = document.createElement("button");
+    window.history.go (-1);
     btnBack.innerText = "Regresar";
     info.appendChild(btnBack);
     
