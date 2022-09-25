@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+}
+
+.box-login {
+    background-color: white;
+    width: 850px;
+    height: 620px;
+    border-radius: 10px;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.623);
+    margin-left: 260px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.box-login .fondo-login {
+    width: 850px;
+}
+
+.box-login-little {
+    margin-left: 200px;
+    position: absolute;
+    width: 640px;
+    height: 270px;
+    margin-top: 40px;
+}
+
+.box-login-little label {
+    margin-right: 15px;
+    font-size: 18px;
+    color: rgb(43, 42, 42);
+}
+
+.box-login-little input {
+    border: none;
+    font-size: 17px;
+    margin-top: 15px;
+    display: block;
+    height: 30px;
+    width: 450px;
+    border-bottom: 1px solid rgb(70, 67, 67);
+    margin-bottom: 15px;
+    outline: none;
+    color: rgb(60, 58, 58);
+}
+
+.forgot-password {
+    font-family: sans-serif;
+    margin-left: 100px;
+    color: rgb(43, 42, 42);
+    font-size: 18px;
+}
+
+.forgot-password:hover{
+    color: rgb(56, 56, 239);
+    font-size: 19px;
+}
+
+.login {
+    margin-top: 50px;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(40, 194, 40);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login:hover{
+    background-color: black;
+    color: white;
+}
+
+.box-login-little ::placeholder {
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+.remember-me{
+    display: inline-block;
+    margin-left: -210px;    
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
