@@ -1,5 +1,5 @@
-//const getCustomerUrl = 'https://mintic-bancoproj-g2.herokuapp.com/getOneCustomer/';
-const getCustomerUrl = 'http://127.0.0.1:8000/biciapp/getOneCustomer/';
+const getCustomerUrl = 'https://mintic-bancoproj-g2.herokuapp.com/biciapp/getOneCustomer/';
+//const getCustomerUrl = 'http://127.0.0.1:8000/biciapp/getOneCustomer/';
 
 function getCustomer() {
   const parsedUrl = new URL(window.location.href);
