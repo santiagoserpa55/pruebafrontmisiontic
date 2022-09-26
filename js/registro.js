@@ -1,5 +1,5 @@
-//const newCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/add';
-const newCustomerUrl = 'http://127.0.0.1:8000/biciapp/add';
+const newCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/add';
+//const newCustomerUrl = 'http://127.0.0.1:8000/biciapp/add';
 
 function validate_names(val) {
     const letters = /^[A-Z a-z]+$/;
