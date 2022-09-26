@@ -39,10 +39,10 @@ function getCustomer() {
 
 function handleCustomer(customer) {
   const comprasInfo = [];
-  customer.compras.forEach(acc => {
+  customer.compras.forEach(com => {
     const singleAccInfo = `
-      <h4>Número de cuenta: ${acc.fecha}</h4>
-      <h4>Saldo: ${acc.fecha}</h4>`;
+      <h4>Número de cuenta: ${com.cantidad}</h4>
+      <h4>Saldo: ${com.cantidad}</h4>`;
     comprasInfo.push(singleAccInfo);
   });
   const custDiv = document.createElement("div");
@@ -53,12 +53,12 @@ function handleCustomer(customer) {
     <h3>Correo: ${customer.correo}</h3>
     <h3>Direccion: ${customer.departamento}, ${customer.ciudad}, ${customer.barrio}, ${customer.direccion} </h3>
     <h3>Compras:</h3>`;
-  comprasInfo.forEach(acc => custDiv.innerHTML += acc);
+  comprasInfo.forEach(com => custDiv.innerHTML += com);
   document.getElementById("cargando").remove();
   const info = document.getElementById("info-customers");
   info.appendChild(custDiv);
 
-  sessionStorage.setItem("fname", customer.firstname);
+  sessionStorage.setItem("fname", customer.primernombre);
   sessionStorage.setItem("lname", customer.lastname);
   sessionStorage.setItem("email", customer.email);
 }
