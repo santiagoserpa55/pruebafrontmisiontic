@@ -57,7 +57,9 @@ function handleSuccess(data){
     /* sessionStorage.setItem("clientId", data.id);
     window.location.href = './cliente.html?id=' + data.id; */
    sessionStorage.setItem("clientId", data.customer_id);
+   console.log("1",data.customer_id)
     window.location.href = './cliente.html?id=' + data.customer_id; 
+    console.log("2",data.customer_id)
 }
 
 function handleError(err) {
