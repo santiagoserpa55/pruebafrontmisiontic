@@ -36,13 +36,12 @@ function getCustomer() {
       handleError();
     });
 }
-
 function handleCustomer(customer) {
   const comprasInfo = [];
-  customer.compras.forEach(com => {
+  customer.compras.forEach(comp => {
     const singleAccInfo = `
-      <h4>Número de cuenta: ${com.cantidad}</h4>
-      <h4>Saldo: ${com.cantidad}</h4>`;
+      <h4>Número de cuenta: ${comp.cantidad}</h4>
+      <h4>Saldo: ${comp.cantidad}</h4>`;
     comprasInfo.push(singleAccInfo);
   });
   const custDiv = document.createElement("div");
@@ -70,7 +69,7 @@ function handleError(err) {
     message.innerText = err;
   else
     message.innerText = "No se pudo cargar la información. Intente más tarde.";
-  const info = document.getElementById("info-customers");
+    const info = document.getElementById("info-customers");
   info.appendChild(message);
 }
 
