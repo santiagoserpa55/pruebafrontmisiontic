@@ -41,8 +41,8 @@ function handleCustomer(customer) {
   const comprasInfo = [];
   customer.compras.forEach(acc => {
     const singleAccInfo = `
-      <h4>Número de cuenta: ${acc.price}</h4>
-      <h4>Saldo: ${acc.balance}</h4>`;
+      <h4>Número de cuenta: ${acc.fecha}</h4>
+      <h4>Saldo: ${acc.fecha}</h4>`;
     comprasInfo.push(singleAccInfo);
   });
   const custDiv = document.createElement("div");
