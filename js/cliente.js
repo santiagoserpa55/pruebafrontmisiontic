@@ -56,7 +56,7 @@ function handleCustomer(customer) {
     <div class="cajaprincipal" id="info">
         <div id="formData">
             <form name="registro" class="form" method="post">
-                <label for="identificacion">Identificación<input type="text" name="id" id="identificacion value="${customer.documento}"></label>
+                <label for="identificacion">Identificación<input type="text" name="id" id="identificacion value="${customer.documento}" disabled></label>
 
                 <label for="primernombre">Primer nombre <input type="text" name="primernombre"
                         id="primernombre" value="${customer.primernombre}" disabled></label>
