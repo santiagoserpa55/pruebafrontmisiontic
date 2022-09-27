@@ -46,12 +46,54 @@ function handleCustomer(customer) {
   });
   const custDiv = document.createElement("div");
   custDiv.innerHTML = `
-    <h3>Nombres: ${customer.primernombre}  ${customer.segundonombre} ${customer.primerapellido} ${customer.segundoapellido}   </h3>
-    <h3>Telefono: ${customer.telefono}</h3>
-    <h3>Cédula: ${customer.documento}</h3>
-    <h3>Correo: ${customer.correo}</h3>
-    <h3>Direccion: ${customer.departamento}, ${customer.ciudad}, ${customer.barrio}, ${customer.direccion} </h3>
-    <h3>Compras:</h3>`;
+
+   
+    
+    <div class="box-register-right">
+    <div class="title">
+        <h2>Bienvenido esta es su informacion</h2>
+    </div>
+    <div class="cajaprincipal" id="info">
+        <div id="formData">
+            <form name="registro" class="form" method="post">
+                <label for="identificacion">Identificación<input type="text" name="id" id="identificacion"></label>
+
+                <label for="primernombre">Primer nombre <input type="text" name="primernombre"
+                        id="primernombre" value="${customer.documento}"></label>
+
+                <label for="segundonombre">Segundo nombre<input type="text" name="segundonombre"
+                        id="segundonombre" value="${customer.segundonombre}"></label>
+
+                <label for="primerapellido">Primer apellido<input type="text" name="primerapellido"
+                        id="primerapellido"></label>
+
+                <label for="segundoapellido">Segundo apellido<input type="text" name="segundoapellido"
+                        id="segundoapellido"></label>
+
+                <label for="telefono">Telefono<input type="text" name="telefono" id="telefono"></label>
+
+                <label for="email">Email<input type="text" name="email" id="email"></label>
+
+
+                <label for="contraseña">Departamento<input type="text" name="departamento" id="departamento"></label>
+
+                <label for="ciudad">Ciudad<input type="text" name="ciudad" id="ciudad"></label>
+
+                <label for="barrio">Barrio<input type="text" name="barrio" id="barrio"></label>
+
+                <label for="direccion">Dirección<input type="text" name="direccion" id="direccion"></label>
+
+                <button class="end-register" value="Registrarse" type="submit">Registrarse</button>
+                <button class="end-register">
+                    <a href="index.html">Cancelar</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+    `;
   comprasInfo.forEach(com => custDiv.innerHTML += com);
   document.getElementById("cargando").remove();
   const info = document.getElementById("info-customers");

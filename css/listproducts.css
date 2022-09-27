@@ -1,0 +1,23 @@
+.container-forms{
+    padding: 2em;
+    width: 100%;
+    background-color: rgb(235, 242, 243);
+}
+.container-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-compras {
+    width: 100%;
+    align-items: center;
+    background-color: rgb(37, 36, 36);
+}
+table,
+td {
+    border: 1px solid #333;
+}
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
