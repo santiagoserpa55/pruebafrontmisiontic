@@ -46,9 +46,6 @@ function handleCustomer(customer) {
   });
   const custDiv = document.createElement("div");
   custDiv.innerHTML = `
-
-   
-    
     <div class="box-register-right">
     <div class="title">
         <h2>Bienvenido esta es su informacion</h2>
@@ -56,7 +53,7 @@ function handleCustomer(customer) {
     <div class="cajaprincipal" id="info">
         <div id="formData">
             <form name="registro" class="form" method="post">
-                <label for="identificacion">Identificación<input type="text" name="id" id="identificacion value="${customer.documento}" disabled></label>
+                <label for="identificacion">Identificación<input type="text" name="id" id="identificacion" value="${customer.documento}" disabled></label>
 
                 <label for="primernombre">Primer nombre <input type="text" name="primernombre"
                         id="primernombre" value="${customer.primernombre}" disabled></label>
@@ -83,7 +80,8 @@ function handleCustomer(customer) {
 
                 <label for="direccion">Dirección<input type="text" name="direccion" id="direccion" value="${customer.direccion}" disabled></label>
 
-                <button class="end-register" value="Registrarse" type="submit">Registrarse</button>
+                <button class="end-register" value="Actualizar" type="submit">Actualizar</button>
+                <button class="end-register" value="Guardar" type="submit">Guardar</button>
                 <button class="end-register">
                     <a href="index.html">Cancelar</a>
                 </button>
