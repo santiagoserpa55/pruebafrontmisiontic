@@ -1,5 +1,5 @@
-//const updateCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/updateCustomer/';
-const updateCustomerUrl = 'http://127.0.0.1:8000/biciapp/updateCustomer/';
+const updateCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/updateCustomer/';
+//const updateCustomerUrl = 'http://127.0.0.1:8000/biciapp/updateCustomer/';
 
 const userId = sessionStorage.getItem("clientId");
 console.log("mostrando id",userId);

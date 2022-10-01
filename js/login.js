@@ -1,5 +1,5 @@
-//const loginUrl = "https://bicimarketunal.herokuapp.com/biciapp/login";
-const loginUrl = "http://127.0.0.1:8000/biciapp/login";
+const loginUrl = "https://bicimarketunal.herokuapp.com/biciapp/login";
+//const loginUrl = "http://127.0.0.1:8000/biciapp/login";
 function collectData(evt){
     evt.preventDefault();
 
