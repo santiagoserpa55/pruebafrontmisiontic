@@ -3,12 +3,12 @@ const getCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/getOneCusto
 
 function getCustomer() {
   const parsedUrl = new URL(window.location.href);
-  //console.log(parsedUrl);
+  console.log(parsedUrl);
   const id = parsedUrl.searchParams.get("id");
-  //console.log(id);
+  console.log("Imprimiendo id",id);
   const accessToken = sessionStorage.getItem("accessToken");
   const refreshToken = sessionStorage.getItem("refreshToken");
-  //console.log("Acá en el otro archivo: " + accessToken);
+  console.log("Acá en el otro archivo: " + accessToken);
   console.log("Acá en el otro archivo: " + refreshToken);
 
   fetch(getCustomerUrl + id, {
@@ -40,8 +40,12 @@ function handleCustomer(customer) {
   const comprasInfo = [];
   customer.compras.forEach(comp => {
     const singleAccInfo = `
-      <h4>Número de cuenta: ${comp.cantidad}</h4>
-      <h4>Saldo: ${comp.cantidad}</h4>`;
+      <h4>Cod Producto: ${comp.product_id}</h4>
+      <h4>Cantidad de articulos: ${comp.cantidad}</h4>
+      <h4>Precio: ${comp.price}</h4>
+      <h4>Total: ${comp.cantidad * comp.price}</h4>
+      <h4>Fecha: ${comp.price}</h4>
+      `;
     comprasInfo.push(singleAccInfo);
   });
   const custDiv = document.createElement("div");
@@ -70,8 +74,6 @@ function handleCustomer(customer) {
                 <label for="telefono">Telefono<input type="text" name="telefono" id="telefono" value="${customer.telefono}" disabled></label>
 
                 <label for="email">Email<input type="text" name="email" id="email" value="${customer.correo}" disabled></label>
-
-
                 <label for="contraseña">Departamento<input type="text" name="departamento" id="departamento" value="${customer.departamento}" disabled></label>
 
                 <label for="ciudad">Ciudad<input type="text" name="ciudad" id="ciudad" value="${customer.ciudad}" disabled></label>
@@ -79,13 +81,9 @@ function handleCustomer(customer) {
                 <label for="barrio">Barrio<input type="text" name="barrio" id="barrio" value="${customer.barrio}" disabled></label>
 
                 <label for="direccion">Dirección<input type="text" name="direccion" id="direccion" value="${customer.direccion}" disabled></label>
-
-                <button class="end-register" value="Actualizar" type="submit">Actualizar</button>
-                <button class="end-register" value="Guardar" type="submit">Guardar</button>
-                <button class="end-register">
-                    <a href="index.html">Cancelar</a>
-                </button>
             </form>
+          
+            
         </div>
     </div>
 </div>
@@ -96,10 +94,11 @@ function handleCustomer(customer) {
   document.getElementById("cargando").remove();
   const info = document.getElementById("info-customers");
   info.appendChild(custDiv);
+   
 
   sessionStorage.setItem("fname", customer.primernombre);
-  sessionStorage.setItem("lname", customer.lastname);
-  sessionStorage.setItem("email", customer.email);
+  sessionStorage.setItem("lname", customer.segundonombre);
+  sessionStorage.setItem("email", customer.correo);
 }
 
 function handleError(err) {

@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente</title>
-    <link rel="stylesheet" href="/css/footer.css">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="/css/registrarse.css">
     <link rel="stylesheet" href="/css/style-bici.css">
-    <link rel="stylesheet" href="/css/listproducts.css">
-    <link rel="stylesheet" href="/css/cliente.css">
-    <script defer src="/js/cliente.js"></script>
+    <link rel="stylesheet" href="/css/footer.css">
+    <script defer src="js/update.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo-pagina"><a href="index.html"><img src="/img/logo.jpg" alt="logo"></a></div>
-
         <div class="box-menu">
             <div class="menu-principal">
                 <ul>
@@ -30,84 +28,61 @@
         </div>
 
         <div class="menu-sesion-registro">
-            <!--             <a href="login.html"><button class="btn-inicio-sesion">Iniciar sesión</button></a>
- -->
-            <a href="index.html"><button class="btn-registro">Salir</button></a>
+            <a href="login.html"><button class="btn-inicio-sesion">Iniciar sesión</button></a>
+
+            <a href="registrarse.html"><button class="btn-registro">Registrarse</button></a>
         </div>
     </header>
 
-    <div class="main-component">
-        <div class="container-forms">
-            <div id="info">
-
+    <div class="box-register">
+        <div class="box-register-left">
+            <img src="/img/logo.jpg" alt="logo">
+        </div>
+        <div class="box-register-right">
+            <div class="title">
+                <h1>Bienvenido</h1>
             </div>
-<!-- 
-             <div class="box-register-right">
-                <div class="title">
-                    <h2>Bienvenido esta es su informacion</h2>
+
+            <div class="cajaprincipal" id="info">
+                <div id="formData">
+                    <form name="update" class="form" method="post">
+                        <label for="primernombre">Primer nombre <input type="text" name="primernombre"
+                                id="primernombre"></label>
+                        <label for="segundonombre">Segundo nombre<input type="text" name="segundonombre"
+                                id="segundonombre"></label>
+
+                        <label for="primerapellido">Primer apellido<input type="text" name="primerapellido"
+                                id="primerapellido"></label>
+
+                        <label for="segundoapellido">Segundo apellido<input type="text" name="segundoapellido"
+                                id="segundoapellido"></label>
+
+                        <label for="telefono">Telefono<input type="text" name="telefono" id="telefono"></label>
+
+                        <label for="email">Email<input type="text" name="email" id="email"></label>
+
+
+                        <label for="contraseña">Departamento<input type="text" name="departamento"
+                                id="departamento"></label>
+
+                        <label for="ciudad">Ciudad<input type="text" name="ciudad" id="ciudad"></label>
+
+                        <label for="barrio">Barrio<input type="text" name="barrio" id="barrio"></label>
+
+                        <label for="direccion">Dirección<input type="text" name="direccion" id="direccion"></label>
+
+
+                        <label for="contraseña">Contraseña<input type="password" name="contrasena"
+                                id="contrasena"></label>
+                        <input class="end-register" value="Actualizar Datos" type="submit"></input>
+
+                    </form>
                 </div>
-                <div class="cajaprincipal" id="info">
-                    <div id="formData">
-                        <form name="registro" class="form" method="post">
-                            <label for="identificacion">Identificación<input type="text" name="id" id="identificacion"></label>
-
-                            <label for="primernombre">Primer nombre <input type="text" name="primernombre" value=""
-                                    id="primernombre"></label>
-
-                            <label for="segundonombre">Segundo nombre<input type="text" name="segundonombre"
-                                    id="segundonombre"></label>
-
-                            <label for="primerapellido">Primer apellido<input type="text" name="primerapellido"
-                                    id="primerapellido"></label>
-
-                            <label for="segundoapellido">Segundo apellido<input type="text" name="segundoapellido"
-                                    id="segundoapellido"></label>
-
-                            <label for="telefono">Telefono<input type="text" name="telefono" id="telefono"></label>
-
-                            <label for="email">Email<input type="text" name="email" id="email"></label>
-
-
-                            <label for="contraseña">Departamento<input type="text" name="departamento" id="departamento"></label>
-
-                            <label for="ciudad">Ciudad<input type="text" name="ciudad" id="ciudad" disabled></label>
-
-                            <label for="barrio">Barrio<input type="text" name="barrio" id="barrio"></label>
-
-                            <label for="direccion">Dirección<input type="text" name="direccion" id="direccion"></label>
-
-                            <button class="end-register" value="Registrarse" type="submit">Registrarse</button>
-                            <button class="end-register">
-                                <a href="index.html">Cancelar</a>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>  -->
-        </div>
-        
-        <div id="info-customers">
-            <div id="cargando">Cargando...</div>
-        </div>
-        <div class="actualizar">
-            <a href="./update.html">Actualizar</a>
-        </div>
-        <div class="container-compras">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Compras</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            </div>
         </div>
     </div>
+
+
 
     <footer class="footer">
         <div class="footer-body">
@@ -201,6 +176,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
