@@ -1,5 +1,5 @@
-const getCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/getOneCustomer/';
-//const getCustomerUrl = 'http://127.0.0.1:8000/biciapp/getOneCustomer/';
+//const getCustomerUrl = 'https://bicimarketunal.herokuapp.com/biciapp/getOneCustomer/';
+const getCustomerUrl = 'http://127.0.0.1:8000/biciapp/getOneCustomer/';
 
 function getCustomer() {
   const parsedUrl = new URL(window.location.href);
@@ -40,13 +40,23 @@ function handleCustomer(customer) {
   const comprasInfo = [];
   customer.compras.forEach(comp => {
     const singleAccInfo = `
-      <h4>Cod Producto: ${comp.product_id}</h4>
-      <h4>Cantidad de articulos: ${comp.cantidad}</h4>
-      <h4>Precio: ${comp.price}</h4>
-      <h4>Total: ${comp.cantidad * comp.price}</h4>
-      <h4>Fecha: ${comp.price}</h4>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>${comp.product_id}</td>
+        <td>${comp.cantidad}</td>
+        <td>${comp.price}</td>
+        <td>${comp.cantidad * comp.price}</td>
+        <td>${comp.fecha}</td>
+      </tr>
+    </tbody>
+  </table>
+
       `;
     comprasInfo.push(singleAccInfo);
+
   });
   const custDiv = document.createElement("div");
   custDiv.innerHTML = `
@@ -87,6 +97,25 @@ function handleCustomer(customer) {
         </div>
     </div>
 </div>
+
+<div class="container-compras">
+Compras
+</div>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Procucto</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Total</th>
+      <th scope="col">Fecha</th>
+    </tr>
+  </thead>
+</table>
 
     
     `;

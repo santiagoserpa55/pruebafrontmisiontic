@@ -8,9 +8,12 @@
     grid-template-columns: 1fr 1fr;
 }
 .container-compras {
+    margin-top: 2em;
     width: 100%;
     align-items: center;
     background-color: rgb(37, 36, 36);
+    color: white;
+    font-size: 25px;
 }
 table,
 td {
